@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<!-- saved from url=(0025)https://footyredraft.com/ -->
+<html lang="en-AU"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Footy Redraft — Rebuild the league, Season by Season</title>
+<meta name="description" content="Inherit a real club's list, then re-draft with hindsight. Every player is rated on how they really performed, and you play it forward season by season to 2026. A rogue-lite re-draft dynasty: chase flags, fill your trophy cabinet, earn every club's S-Tier medal.">
+<link rel="icon" href="https://footyredraft.com/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="https://footyredraft.com/apple-touch-icon.png">
+<meta name="theme-color" content="#101314">
+
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Footy Redraft">
+<meta property="og:title" content="Footy Redraft — Rebuild the league, season by season">
+<meta property="og:description" content="Inherit a real club's list, then delist, re-draft with hindsight and play it forward to 2026. Chase flags, fill your trophy cabinet, earn every club's S-Tier medal.">
+<meta property="og:url" content="https://footyredraft.com/">
+<meta property="og:image" content="https://footyredraft.com/share.png?v=2">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Footy Redraft — Rebuild the league, season by season">
+<meta name="twitter:description" content="Inherit a real club's list, re-draft with hindsight, chase flags to 2026.">
+<meta name="twitter:image" content="https://footyredraft.com/share.png?v=2">
+
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./Footy Redraft — Rebuild the league, Season by Season_files/css2" rel="stylesheet">
+<link rel="stylesheet" href="./Footy Redraft — Rebuild the league, Season by Season_files/styles.css">
+
+
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+<script defer="" src="./Footy Redraft — Rebuild the league, Season by Season_files/script.js.download"></script>
+</head>
+<body class="">
+
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      
+      <button class="brand-home" id="brand-home" type="button" aria-label="Back to the home screen">
+        <img class="brand-lockup" src="./Footy Redraft — Rebuild the league, Season by Season_files/logo-lockup.svg" alt="Footy Redraft">
+      </button>
+      <span class="brand-season mono" id="brand-season"><b class="season-year">2012</b><span class="season-ctx">SEASON</span></span>
+    </div>
+    <nav class="steps" aria-label="Game phases">
+      <button class="step is-reachable" data-phase="list">List</button>
+      <button class="step is-reachable" data-phase="draft">Draft</button>
+      <button class="step is-active" data-phase="season">Season</button>
+      <button class="step" data-phase="review">Review</button>
+      <button class="step is-reachable" data-phase="record">Record</button>
+    </nav>
+    <button class="rankings-btn" id="rankings-btn" aria-label="League power rankings">
+      <span class="rankings-btn-tick"></span><span class="rankings-btn-label">RANKINGS</span>
+    </button>
+    <div class="topbar-rating">
+      <span class="topbar-rating-label">TEAM</span>
+      <span class="topbar-rating-num mono" id="topbar-rating">—</span>
+    </div>
+    <div class="topbar-score" id="topbar-score">
+      <span class="topbar-score-label">RUN<br>SCORE</span>
+      <span class="topbar-score-num mono" id="topbar-score-num">0</span>
+    </div>
+  </div>
+</header>
+
+
+<div class="ticker is-off" id="ticker" aria-label="Live totals across all games played">
+  <div class="ticker-track" id="ticker-track" style="animation-duration: 66.1794s;"><div class="tk-run"><span class="tk-item tk-lab mono">AROUND THE GROUNDS</span><span class="tk-dot">•</span><span class="tk-item"><b>13,371,245</b> seasons played</span><span class="tk-dot">•</span><span class="tk-item"><b>1,725,517</b> dynasties started</span><span class="tk-dot">•</span><span class="tk-item"><b>1,569,683</b> drafts completed</span><span class="tk-dot">•</span><span class="tk-item"><b>946,343</b> dynasties finished</span><span class="tk-dot">•</span><span class="tk-item"><b>120,384</b> S-Tier medals won</span><span class="tk-dot">•</span></div><div class="tk-run"><span class="tk-item tk-lab mono">AROUND THE GROUNDS</span><span class="tk-dot">•</span><span class="tk-item"><b>13,371,245</b> seasons played</span><span class="tk-dot">•</span><span class="tk-item"><b>1,725,517</b> dynasties started</span><span class="tk-dot">•</span><span class="tk-item"><b>1,569,683</b> drafts completed</span><span class="tk-dot">•</span><span class="tk-item"><b>946,343</b> dynasties finished</span><span class="tk-dot">•</span><span class="tk-item"><b>120,384</b> S-Tier medals won</span><span class="tk-dot">•</span></div><div class="tk-run"><span class="tk-item tk-lab mono">AROUND THE GROUNDS</span><span class="tk-dot">•</span><span class="tk-item"><b>13,371,245</b> seasons played</span><span class="tk-dot">•</span><span class="tk-item"><b>1,725,517</b> dynasties started</span><span class="tk-dot">•</span><span class="tk-item"><b>1,569,683</b> drafts completed</span><span class="tk-dot">•</span><span class="tk-item"><b>946,343</b> dynasties finished</span><span class="tk-dot">•</span><span class="tk-item"><b>120,384</b> S-Tier medals won</span><span class="tk-dot">•</span></div><div class="tk-run"><span class="tk-item tk-lab mono">AROUND THE GROUNDS</span><span class="tk-dot">•</span><span class="tk-item"><b>13,371,245</b> seasons played</span><span class="tk-dot">•</span><span class="tk-item"><b>1,725,517</b> dynasties started</span><span class="tk-dot">•</span><span class="tk-item"><b>1,569,683</b> drafts completed</span><span class="tk-dot">•</span><span class="tk-item"><b>946,343</b> dynasties finished</span><span class="tk-dot">•</span><span class="tk-item"><b>120,384</b> S-Tier medals won</span><span class="tk-dot">•</span></div><div class="tk-run"><span class="tk-item tk-lab mono">AROUND THE GROUNDS</span><span class="tk-dot">•</span><span class="tk-item"><b>13,371,245</b> seasons played</span><span class="tk-dot">•</span><span class="tk-item"><b>1,725,517</b> dynasties started</span><span class="tk-dot">•</span><span class="tk-item"><b>1,569,683</b> drafts completed</span><span class="tk-dot">•</span><span class="tk-item"><b>946,343</b> dynasties finished</span><span class="tk-dot">•</span><span class="tk-item"><b>120,384</b> S-Tier medals won</span><span class="tk-dot">•</span></div><div class="tk-run"><span class="tk-item tk-lab mono">AROUND THE GROUNDS</span><span class="tk-dot">•</span><span class="tk-item"><b>13,371,245</b> seasons played</span><span class="tk-dot">•</span><span class="tk-item"><b>1,725,517</b> dynasties started</span><span class="tk-dot">•</span><span class="tk-item"><b>1,569,683</b> drafts completed</span><span class="tk-dot">•</span><span class="tk-item"><b>946,343</b> dynasties finished</span><span class="tk-dot">•</span><span class="tk-item"><b>120,384</b> S-Tier medals won</span><span class="tk-dot">•</span></div></div>
+</div>
+
+<main class="shell">
+
+  
+  <section class="phase" id="phase-mode" hidden="">
+
+    <div class="club-hero">
+      <h1 class="club-hero-mark">Inherit a real club and draft your way to a <span>flag</span>.</h1>
+      <p class="club-hero-sub">Take charge of any club, inherit its real list, and re-draft with hindsight.
+        Every player is rated on how he actually performed, season by season to 2026.</p>
+      
+      <div class="club-hero-actions">
+        <button class="club-hero-continue" id="club-hero-continue"><svg class="club-hero-ico" viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg>Continue Brisbane <span class="mono">15-SZN · 2012</span></button>
+        <span class="club-hero-links">
+          <button class="hero-link" id="club-hero-howto">How to Play</button>
+          
+          <button class="cabinet-pill" id="club-hero-cabinet">
+            <span class="cabinet-pill-coin" id="cabinet-pill-coin"><span class="tcoin is-locked" style="--sz:30px;--d:0s"><span class="tc-face" style="background:repeating-linear-gradient(302deg, #0a2240 0 14%, #e21937 14% 28%, #ffd200 28% 42%)"></span><svg class="tc-rim" viewBox="0 0 96 96" aria-hidden="true"><defs><path id="tcp16" d="M 12 48 A 36 36 0 0 1 84 48"></path></defs><text class="tc-rimtext"><textpath href="#tcp16" startOffset="50%">5 SEASONS</textpath></text></svg><span class="tc-shine"></span><span class="tc-chip"><span class="tc-s">S</span></span></span></span>
+            <span class="cabinet-pill-text">Trophy Cabinet</span>
+            <span class="cabinet-pill-count mono" id="cabinet-pill-count">0/88</span>
+          </button>
+        </span>
+      </div>
+    </div>
+    <h2 class="club-pick-head club-pick-head--landing">Choose your run</h2>
+    <div class="mode-stack">
+      <div class="mode-grid" id="mode-grid"><button class="run-row is-on" style="animation-delay: 0s;">
+      <span class="run-row-tag">The Full Epic</span>
+      <span class="run-row-track">
+        <span class="run-row-fill" style="left:0%">
+          <span class="run-row-from mono">2007</span>
+        </span>
+      </span>
+      <span class="run-row-n mono">20 <span class="run-row-unit">SZN</span></span></button><button class="run-row" style="animation-delay: 0.03s;">
+      <span class="run-row-tag">The Long Haul</span>
+      <span class="run-row-track">
+        <span class="run-row-fill" style="left:25%">
+          <span class="run-row-from mono">2012</span>
+        </span>
+      </span>
+      <span class="run-row-n mono">15 <span class="run-row-unit">SZN</span></span></button><button class="run-row" style="animation-delay: 0.06s;">
+      <span class="run-row-tag">The Build</span>
+      <span class="run-row-track">
+        <span class="run-row-fill" style="left:50%">
+          <span class="run-row-from mono">2017</span>
+        </span>
+      </span>
+      <span class="run-row-n mono">10 <span class="run-row-unit">SZN</span></span></button><button class="run-row" style="animation-delay: 0.09s;">
+      <span class="run-row-tag">The Sprint</span>
+      <span class="run-row-track">
+        <span class="run-row-fill" style="left:75%">
+          <span class="run-row-from mono">2022</span>
+        </span>
+      </span>
+      <span class="run-row-n mono">5 <span class="run-row-unit">SZN</span></span></button></div>
+      <div class="run-axis"><span class="run-axis-end mono">every run ends 2026</span></div>
+      <button class="redraft-card" id="mode-redraft" type="button">
+        <span class="redraft-card-title">Year Zero <span class="mono redraft-card-yrs">2017–2026</span></span>
+        <span class="redraft-card-sub">Nobody keeps their list. One giant snake draft, eighteen clubs from scratch.</span>
+      </button>
+    </div>
+    
+    <button class="update-note" id="update-note" type="button">
+      <span class="update-note-kicker mono">UPDATE</span>
+      Trades are in. Here are some thoughts to consider. <span class="update-note-go">the note →</span>
+    </button>
+    <p class="club-hero-savenote">Your run saves automatically in this browser.</p>
+    <p class="hof-line"><button class="hof-link mono" id="club-hero-lb" type="button">Hall of Fame <span class="hero-retired-tag mono">retired</span> →</button></p>
+    <p class="beer-line"><a class="beer-pill" href="https://ko-fi.com/footyredraft" target="_blank" rel="noopener">🍺 Shout me a beer</a></p>
+    <p class="contact-line">Feedback and “constructive criticism”:
+      <a class="contact-x" href="https://x.com/SgtButane" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.657l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25h6.826l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+        @SgtButane
+      </a>
+    </p>
+    <p class="disclaimer">A free fan project, not affiliated with, endorsed by or connected to the Australian
+      Football League, any club, or any player. The premierships you win here are, legally speaking, imaginary.</p>
+  </section>
+
+  
+  <section class="phase" id="phase-club" hidden="">
+    <div class="club-pick-bar">
+      <button class="mode-back" id="mode-back" type="button">← Run length</button>
+      <h2 class="club-pick-head club-pick-head--bar">Choose your club <span class="club-pick-mode mono" id="club-pick-mode"></span></h2>
+    </div>
+    <p class="club-pick-sub">Every club has an <b>S-Tier score</b> to chase. Reach it in a full run and the medal's yours.
+      <button class="tier-info" id="tier-help-btn" type="button" aria-label="How tiers work">how tiers work →</button></p>
+    <div class="club-grid" id="club-grid"><button class="club-card" style="animation-delay: 0s; --club-edge: linear-gradient(135deg, #1a58a5 0% 33.333333333333336%,#e21937 33.333333333333336% 66.66666666666667%,#ffd200 66.66666666666667% 100%); --club: #1a58a5;">
+      <span class="club-card-name">Adelaide</span>
+      <span class="club-card-meta mono"><span class="rate-pill r-good" title="Best-22 rating">72</span> <span class="club-card-proj">PROJ 4TH</span></span>
+      <span class="club-card-go">PLAY →</span>
+      <span class="club-card-badge" title="Score 683+ to earn Adelaide's S-Tier medal"><span class="tcoin is-locked" style="--sz:46px;--d:0s"><span class="tc-face" style="background:repeating-linear-gradient(302deg, #0a2240 0 14%, #e21937 14% 28%, #ffd200 28% 42%)"></span><svg class="tc-rim" viewBox="0 0 96 96" aria-hidden="true"><defs><path id="tcp0" d="M 12 48 A 36 36 0 0 1 84 48"></path></defs><text class="tc-rimtext"><textpath href="#tcp0" startOffset="50%">20 SEASONS</textpath></text></svg><span class="tc-shine"></span><span class="tc-chip"><span class="tc-s">S</span></span></span><span class="club-card-target"><span class="ct-num">683</span><span class="ct-lab">FOR S-TIER</span></span></span>
+    </button><button class="club-card" style="animation-delay: 0.025s; --club-edge: linear-gradient(135deg, #69003d 0% 33.333333333333336%,#0055a3 33.333333333333336% 66.66666666666667%,#f9a01b 66.66666666666667% 100%); --club: #69003d;">
+      <span class="club-card-name">Brisbane</span>
+      <span class="club-card-meta mono"><span class="rate-pill r-ok" title="Best-22 rating">64</span> <span class="club-card-proj">PROJ 15TH</span></span>
+      <span class="club-card-go">PLAY →</span>
+      <span class="club-card-badge" title="Score 691+ to earn Brisbane's S-Tier medal"><span class="tcoin is-locked" style="--sz:46px;--d:0s"><span class="tc-face" style="background:linear-gradient(180deg, #0055a3 0 32%, #f9a01b 32% 38%, #69003d 38% 100%)"></span><svg class="tc-rim" viewBox="0 0 96 96" aria-hidden="true"><defs><path id="tcp1" d="M 12 48 A 36 36 0 0 1 84 48"></path></defs><text class="tc-rimtext"><textpath href="#tcp1" startOffset="50%">20 SEASONS</textpath></text></svg><span class="tc-shine"></span><span class="tc-chip"><span class="tc-s">S</span></span></span><span class="club-card-target"><span class="ct-num">691</span><span class="ct-lab">FOR S-TIER</span></span></span>
+    </button><button class="club-card" style="animation-delay: 0.05s; --club-edge: linear-gradient(135deg, #336ea5 0% 100%); --club: #336ea5;">
+      <span class="club-card-name">Carlton</span>
+      <span class="club-card-meta mono"><span class="rate-pill r-ok" title="Best-22 rating">67</span> <span class="club-card-proj">PROJ 11TH</span></span>
+      <span class="club-card-go">PLAY →</span>
+      <span class="club-card-badge" title="Score 752+ to earn Carlton's S-Tier medal"><span class="tcoin is-locked" style="--sz:46px;--d:0s"><span class="tc-face" style="background:#0e1e2d"><span class="tc-mono">C</span></span><svg class="tc-rim" viewBox="0 0 96 96" aria-hidden="true"><defs><path id="tcp2" d="M 12 48 A 36 36 0 0 1 84 48"></path></defs><text class="tc-rimtext"><textpath href="#tcp2" startOffset="50%">20 SEASONS</textpath></text></svg><span class="tc-shine"></span><span class="tc-chip"><span class="tc-s">S</span></span></span><span class="club-card-target"><span class="ct-num">752</span><span class="ct-lab">FOR S-TIER</span></span></span>
+    </button><button class="club-card" style="animation-delay: 0.075s; --club-edge: linear-gradient(135deg, #a5a5a5 0% 50%,#ffffff 50% 100%); --club: #a5a5a5;">
+      <span class="club-card-name">Collingwood</span>
+      <span class="club-card-meta mono"><span class="rate-pill r-good" title="Best-22 rating">79</span> <span class="club-card-proj">PROJ 2ND</span></span>
+      <span class="club-card-go">PLAY →</span>
+      <span class="club-card-badge" title="Score 767+ to earn Collingwood's S-Tier medal"><span class="tcoin is-locked" style="--sz:46px;--d:0s"><span class="tc-face" style="background:linear-gradient(180deg, #101010 0 24%, transparent 24%),repeating-linear-gradient(90deg, #101010 0 13%, #ffffff 13% 26%)"></span><svg class="tc-rim" viewBox="0 0 96 96" aria-hidden="true"><defs><path id="tcp3" d="M 12 48 A 36 36 0 0 1 84 48"></path></defs><text class="tc-rimtext"><textpath href="#tcp3" startOffset="50%">20 SEASONS</textpath></text></svg><span class="tc-shine"></span><span class="tc-chip"><span class="tc-s">S</span></span></span><span class="club-card-target"><span class="ct-num">767</span><span class="ct-lab">FOR S-TIER</span></span></span>
+    </button><button class="club-card" style="animation-delay: 0.1s; --club-edge: linear-gradient(135deg, #a5a5a5 0% 50%,#cc2031 50% 100%); --club: #a5a5a5;">
+      <span class="club-card-name">Essendon</span>
+      <span class="club-card-meta mono"><span class="rate-pill r-good" title="Best-22 rating">73</span> <span class="club-card-proj">PROJ 3RD</span></span>
+      <span class="club-card-go">PLAY →</span>
+      <span class="club-card-badge" title="Score 723+ to earn Essendon's S-Tier medal"><span class="tcoin is-locked" style="--sz:46px;--d:0s"><span class="tc-face" style="background:linear-gradient(302deg, #101010 0 40%, #cc2031 40% 60%, #101010 60% 100%)"></span><svg class="tc-rim" viewBox="0 0 96 96" aria-hidden="true"><defs><path id="tcp4" d="M 12 48 A 36 36 0 0 1 84 48"></path></defs><text class="tc-rimtext"><textpath href="#tcp4" startOffset="50%">20 SEASONS</textpath></text></svg><span class="tc-shine"></span><span class="tc-chip"><span class="tc-s">S</span></span></span><span class="club-card-target"><span class="ct-num">723</span><span class="ct-lab">FOR S-TIER</span></span></span>
+    </button><button class="club-card" style="animation-delay: 0.125s; --club-edge: linear-gradient(135deg, #531aa5 0% 50%,#ffffff 50% 100%); --club: #531aa5;">
+      <span class="club-card-name">Fremantle</span>
+      <span class="club-card-meta mono"><span class="rate-pill r-ok" title="Best-22 rating">67</span> <span class="club-card-proj">PROJ 13TH</span></span>
+      <span class="club-card-go">PLAY →</span>
+      <span class="club-card-badge" title="Score 709+ to earn Fremantle's S-Tier medal"><span class="tcoin is-locked" style="--sz:46px;--d:0s"><span class="tc-face" style="background:linear-gradient(to top right, transparent 0 40%, #ffffff 40% 62%, transparent 62%) left 0 top 0/50.5% 100% no-repeat,linear-gradient(to top left, transparent 0 40%, #ffffff 40% 62%, transparent 62%) right 0 top 0/50.5% 100% no-repeat,linear-gradient(#2a0d54, #2a0d54)"></span><svg class="tc-rim" viewBox="0 0 96 96" aria-hidden="true"><defs><path id="tcp5" d="M 12 48 A 36 36 0 0 1 84 48"></path></defs><text class="tc-rimtext"><textpath href="#tcp5" startOffset="50%">20 SEASONS</textpath></text></svg><span class="tc-shine"></span><span class="tc-chip"><span class="tc-s">S</span></span></span><span class="club-card-target"><span class="ct-num">709</span><span class="ct-lab">FOR S-TIER</span></span></span>
+    </button><button class="club-card" style="animation-delay: 0.15s; --club-edge: linear-gradient(135deg, #0054a5 0% 50%,#ffffff 50% 100%); --club: #0054a5;">
+      <span class="club-card-name">Geelong</span>
+      <span class="club-card-meta mono"><span class="rate-pill r-elite" title="Best-22 rating">82</span> <span class="club-card-proj">PROJ 1ST</span></span>
+      <span class="club-card-go">PLAY →</span>
+      <span class="club-card-badge" title="Score 826+ to earn Geelong's S-Tier medal"><span class="tcoin is-locked" style="--sz:46px;--d:0s"><span class="tc-face" style="background:repeating-linear-gradient(0deg, #001f3d 0 25%, #ffffff 25% 50%)"></span><svg class="tc-rim" viewBox="0 0 96 96" aria-hidden="true"><defs><path id="tcp6" d="M 12 48 A 36 36 0 0 1 84 48"></path></defs><text class="tc-rimtext"><textpath href="#tcp6" startOffset="50%">20 SEASONS</textpath></text></svg><span class="tc-shine"></span><span class="tc-chip"><span class="tc-s">S</span></span></span><span class="club-card-target"><span class="ct-num">826</span><span class="ct-lab">FOR S-TIER</span></span></span>
+    </button><button class="club-card" style="animation-delay: 0.175s; --club-edge: linear-gradient(135deg, #a54509 0% 50%,#fbbf15 50% 100%); --club: #a54509;">
+      <span class="club-card-name">Hawthorn</span>
+      <span class="club-card-meta mono"><span class="rate-pill r-good" title="Best-22 rating">69</span> <span class="club-card-proj">PROJ 8TH</span></span>
+      <span class="club-card-go">PLAY →</span>
+      <span class="club-card-badge" title="Score 806+ to earn Hawthorn's S-Tier medal"><span class="tcoin is-locked" style="--sz:46px;--d:0s"><span class="tc-face" style="background:linear-gradient(180deg, #4d2004 0 24%, transparent 24%),repeating-linear-gradient(90deg, #4d2004 0 13%, #fbbf15 13% 26%)"></span><svg class="tc-rim" viewBox="0 0 96 96" aria-hidden="true"><defs><path id="tcp7" d="M 12 48 A 36 36 0 0 1 84 48"></path></defs><text class="tc-rimtext"><textpath href="#tcp7" startOffset="50%">20 SEASONS</textpath></text></svg><span class="tc-shine"></span><span class="tc-chip"><span class="tc-s">S</span></span></span><span class="club-card-target"><span class="ct-num">806</span><span class="ct-lab">FOR S-TIER</span></span></span>
+    </button><button class="club-card" style="animation-delay: 0.2s; --club-edge: linear-gradient(135deg, #1354a5 0% 50%,#cc2031 50% 100%); --club: #1354a5;">
+      <span class="club-card-name">Melbourne</span>
+      <span class="club-card-meta mono"><span class="rate-pill r-good" title="Best-22 rating">71</span> <span class="club-card-proj">PROJ 6TH</span></span>
+      <span class="club-card-go">PLAY →</span>
+      <span class="club-card-badge" title="Score 694+ to earn Melbourne's S-Tier medal"><span class="tcoin is-locked" style="--sz:46px;--d:0s"><span class="tc-face" style="background:linear-gradient(to top right, transparent 0 48%, #cc2031 48% 70%, transparent 70%) left 0 top 0/50.5% 100% no-repeat,linear-gradient(to top left, transparent 0 48%, #cc2031 48% 70%, transparent 70%) right 0 top 0/50.5% 100% no-repeat,linear-gradient(#061a33, #061a33)"></span><svg class="tc-rim" viewBox="0 0 96 96" aria-hidden="true"><defs><path id="tcp8" d="M 12 48 A 36 36 0 0 1 84 48"></path></defs><text class="tc-rimtext"><textpath href="#tcp8" startOffset="50%">20 SEASONS</textpath></text></svg><span class="tc-shine"></span><span class="tc-chip"><span class="tc-s">S</span></span></span><span class="club-card-target"><span class="ct-num">694</span><span class="ct-lab">FOR S-TIER</span></span></span>
+    </button><button class="club-card" style="animation-delay: 0.225s; --club-edge: linear-gradient(135deg, #013b9f 0% 50%,#ffffff 50% 100%); --club: #013b9f;">
+      <span class="club-card-name">North Melbourne</span>
+      <span class="club-card-meta mono"><span class="rate-pill r-ok" title="Best-22 rating">67</span> <span class="club-card-proj">PROJ 12TH</span></span>
+      <span class="club-card-go">PLAY →</span>
+      <span class="club-card-badge" title="Score 739+ to earn North Melbourne's S-Tier medal"><span class="tcoin is-locked" style="--sz:46px;--d:0s"><span class="tc-face" style="background:linear-gradient(180deg, #013b9f 0 24%, transparent 24%),repeating-linear-gradient(90deg, #013b9f 0 13%, #ffffff 13% 26%)"></span><svg class="tc-rim" viewBox="0 0 96 96" aria-hidden="true"><defs><path id="tcp9" d="M 12 48 A 36 36 0 0 1 84 48"></path></defs><text class="tc-rimtext"><textpath href="#tcp9" startOffset="50%">20 SEASONS</textpath></text></svg><span class="tc-shine"></span><span class="tc-chip"><span class="tc-s">S</span></span></span><span class="club-card-target"><span class="ct-num">739</span><span class="ct-lab">FOR S-TIER</span></span></span>
+    </button><button class="club-card" style="animation-delay: 0.25s; --club-edge: linear-gradient(135deg, #a5a5a5 0% 33.333333333333336%,#ffffff 33.333333333333336% 66.66666666666667%,#0098bf 66.66666666666667% 100%); --club: #a5a5a5;">
+      <span class="club-card-name">Port Adelaide</span>
+      <span class="club-card-meta mono"><span class="rate-pill r-ok" title="Best-22 rating">67</span> <span class="club-card-proj">PROJ 10TH</span></span>
+      <span class="club-card-go">PLAY →</span>
+      <span class="club-card-badge" title="Score 714+ to earn Port Adelaide's S-Tier medal"><span class="tcoin is-locked" style="--sz:46px;--d:0s"><span class="tc-face" style="background:linear-gradient(to top right, transparent 0 42%, #ffffff 42% 58%, #0098bf 58% 70%, transparent 70%) left 0 top 0/50.5% 100% no-repeat,linear-gradient(to top left, transparent 0 42%, #ffffff 42% 58%, #0098bf 58% 70%, transparent 70%) right 0 top 0/50.5% 100% no-repeat,linear-gradient(#101010, #101010)"></span><svg class="tc-rim" viewBox="0 0 96 96" aria-hidden="true"><defs><path id="tcp10" d="M 12 48 A 36 36 0 0 1 84 48"></path></defs><text class="tc-rimtext"><textpath href="#tcp10" startOffset="50%">20 SEASONS</textpath></text></svg><span class="tc-shine"></span><span class="tc-chip"><span class="tc-s">S</span></span></span><span class="club-card-target"><span class="ct-num">714</span><span class="ct-lab">FOR S-TIER</span></span></span>
+    </button><button class="club-card" style="animation-delay: 0.275s; --club-edge: linear-gradient(135deg, #a5a5a5 0% 50%,#ffd200 50% 100%); --club: #a5a5a5;">
+      <span class="club-card-name">Richmond</span>
+      <span class="club-card-meta mono"><span class="rate-pill r-ok" title="Best-22 rating">67</span> <span class="club-card-proj">PROJ 14TH</span></span>
+      <span class="club-card-go">PLAY →</span>
+      <span class="club-card-badge" title="Score 703+ to earn Richmond's S-Tier medal"><span class="tcoin is-locked" style="--sz:46px;--d:0s"><span class="tc-face" style="background:linear-gradient(302deg, #101010 0 40%, #ffd200 40% 60%, #101010 60% 100%)"></span><svg class="tc-rim" viewBox="0 0 96 96" aria-hidden="true"><defs><path id="tcp11" d="M 12 48 A 36 36 0 0 1 84 48"></path></defs><text class="tc-rimtext"><textpath href="#tcp11" startOffset="50%">20 SEASONS</textpath></text></svg><span class="tc-shine"></span><span class="tc-chip"><span class="tc-s">S</span></span></span><span class="club-card-target"><span class="ct-num">703</span><span class="ct-lab">FOR S-TIER</span></span></span>
+    </button><button class="club-card" style="animation-delay: 0.3s; --club-edge: linear-gradient(135deg, #ed0f05 0% 33.333333333333336%,#ffffff 33.333333333333336% 66.66666666666667%,#a5a5a5 66.66666666666667% 100%); --club: #ed0f05;">
+      <span class="club-card-name">St Kilda</span>
+      <span class="club-card-meta mono"><span class="rate-pill r-ok" title="Best-22 rating">67</span> <span class="club-card-proj">PROJ 9TH</span></span>
+      <span class="club-card-go">PLAY →</span>
+      <span class="club-card-badge" title="Score 717+ to earn St Kilda's S-Tier medal"><span class="tcoin is-locked" style="--sz:46px;--d:0s"><span class="tc-face" style="background:linear-gradient(90deg, #ed0f05 0 33.34%, #ffffff 33.34% 66.67%, #101010 66.67% 100%)"></span><svg class="tc-rim" viewBox="0 0 96 96" aria-hidden="true"><defs><path id="tcp12" d="M 12 48 A 36 36 0 0 1 84 48"></path></defs><text class="tc-rimtext"><textpath href="#tcp12" startOffset="50%">20 SEASONS</textpath></text></svg><span class="tc-shine"></span><span class="tc-chip"><span class="tc-s">S</span></span></span><span class="club-card-target"><span class="ct-num">717</span><span class="ct-lab">FOR S-TIER</span></span></span>
+    </button><button class="club-card" style="animation-delay: 0.325s; --club-edge: linear-gradient(135deg, #ffffff 0% 50%,#ed171f 50% 100%); --club: #ffffff;">
+      <span class="club-card-name">Sydney</span>
+      <span class="club-card-meta mono"><span class="rate-pill r-ok" title="Best-22 rating">63</span> <span class="club-card-proj">PROJ 16TH</span></span>
+      <span class="club-card-go">PLAY →</span>
+      <span class="club-card-badge" title="Score 744+ to earn Sydney's S-Tier medal"><span class="tcoin is-locked" style="--sz:46px;--d:0s"><span class="tc-face" style="background:linear-gradient(to top right, transparent 0 48%, #ed171f 48% 70%, transparent 70%) left 0 top 0/50.5% 100% no-repeat,linear-gradient(to top left, transparent 0 48%, #ed171f 48% 70%, transparent 70%) right 0 top 0/50.5% 100% no-repeat,linear-gradient(#ffffff, #ffffff)"></span><svg class="tc-rim" viewBox="0 0 96 96" aria-hidden="true"><defs><path id="tcp13" d="M 12 48 A 36 36 0 0 1 84 48"></path></defs><text class="tc-rimtext"><textpath href="#tcp13" startOffset="50%">20 SEASONS</textpath></text></svg><span class="tc-shine"></span><span class="tc-chip"><span class="tc-s">S</span></span></span><span class="club-card-target"><span class="ct-num">744</span><span class="ct-lab">FOR S-TIER</span></span></span>
+    </button><button class="club-card" style="animation-delay: 0.35s; --club-edge: linear-gradient(135deg, #003087 0% 50%,#f2a900 50% 100%); --club: #003087;">
+      <span class="club-card-name">West Coast</span>
+      <span class="club-card-meta mono"><span class="rate-pill r-good" title="Best-22 rating">70</span> <span class="club-card-proj">PROJ 7TH</span></span>
+      <span class="club-card-go">PLAY →</span>
+      <span class="club-card-badge" title="Score 725+ to earn West Coast's S-Tier medal"><span class="tcoin is-locked" style="--sz:46px;--d:0s"><span class="tc-face" style="background:linear-gradient(180deg, #f2a900 0 36%, #003087 36% 100%)"></span><svg class="tc-rim" viewBox="0 0 96 96" aria-hidden="true"><defs><path id="tcp14" d="M 12 48 A 36 36 0 0 1 84 48"></path></defs><text class="tc-rimtext"><textpath href="#tcp14" startOffset="50%">20 SEASONS</textpath></text></svg><span class="tc-shine"></span><span class="tc-chip"><span class="tc-s">S</span></span></span><span class="club-card-target"><span class="ct-num">725</span><span class="ct-lab">FOR S-TIER</span></span></span>
+    </button><button class="club-card" style="animation-delay: 0.375s; --club-edge: linear-gradient(135deg, #014896 0% 33.333333333333336%,#dc2830 33.333333333333336% 66.66666666666667%,#ffffff 66.66666666666667% 100%); --club: #014896;">
+      <span class="club-card-name">Western Bulldogs</span>
+      <span class="club-card-meta mono"><span class="rate-pill r-good" title="Best-22 rating">72</span> <span class="club-card-proj">PROJ 5TH</span></span>
+      <span class="club-card-go">PLAY →</span>
+      <span class="club-card-badge" title="Score 727+ to earn Western Bulldogs's S-Tier medal"><span class="tcoin is-locked" style="--sz:46px;--d:0s"><span class="tc-face" style="background:linear-gradient(180deg, #014896 0 34%, #ffffff 34% 39%, #dc2830 39% 55%, #ffffff 55% 60%, #014896 60% 100%)"></span><svg class="tc-rim" viewBox="0 0 96 96" aria-hidden="true"><defs><path id="tcp15" d="M 12 48 A 36 36 0 0 1 84 48"></path></defs><text class="tc-rimtext"><textpath href="#tcp15" startOffset="50%">20 SEASONS</textpath></text></svg><span class="tc-shine"></span><span class="tc-chip"><span class="tc-s">S</span></span></span><span class="club-card-target"><span class="ct-num">727</span><span class="ct-lab">FOR S-TIER</span></span></span>
+    </button></div>
+  </section>
+
+  
+  <section class="phase" id="phase-list" hidden="">
+
+    <div class="panel rating-band">
+      <div class="band-overall">
+        <span class="overall-num" id="overall-num">—</span>
+        <span class="band-overall-meta">
+          <span class="band-club mono" id="rating-club">BRISBANE</span>
+          <span class="overall-label" id="overall-label">Overall rating</span>
+          <span class="overall-tier" id="overall-tier">—</span>
+        </span>
+      </div>
+      <div class="line-stats" id="rating-lines"></div>
+    </div>
+
+    <div id="list-status"></div>
+
+    
+    <button class="trade-entry" id="open-trade-centre" type="button">
+      <span class="trade-entry-title">Open the Trade Centre <span class="trade-entry-go">→</span></span>
+      <span class="trade-entry-opt">(optional)</span>
+      <span class="trade-entry-copy">Players and picks, with the other 17 clubs. Closes at the draft.</span>
+      <span class="trade-entry-meta mono" id="trade-card-meta"></span>
+    </button>
+
+    <div id="list-retirees" aria-live="polite"></div>
+
+    <p class="list-hint" id="list-hint"><span class="hint-edge"></span><span id="list-hint-text"></span></p>
+
+    <div class="pos-grid" id="pos-grid"></div>
+
+  </section>
+
+  
+  <section class="phase" id="phase-draft" hidden="">
+    <button class="mode-back draft-back" id="draft-back" type="button" hidden="">← Back to your list</button>
+    <div class="draft-grid">
+
+      <div class="panel draft-board-panel">
+        <div class="panel-head">
+          <h2 class="panel-title">Draft Order</h2>
+          <span class="panel-aside mono" id="draft-pick-count">—</span>
+        </div>
+        <div class="onclock" id="onclock">
+          <span class="onclock-text">Reverse ladder order: the wooden spooners pick first.</span>
+        </div>
+        <div class="pick-ticker" id="pick-ticker"></div>
+        
+        <div class="your-picks" id="your-picks" hidden="">
+          <div class="your-picks-head">
+            <span class="your-picks-title">Your Picks</span>
+            <span class="your-picks-count mono" id="your-picks-count"></span>
+          </div>
+          <div id="your-picks-rows"></div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-head">
+          <h2 class="panel-title">Draft Pool</h2>
+          <span class="panel-aside mono" id="pool-remaining"></span>
+        </div>
+        <div id="draft-hud"></div>
+        <div class="pool-controls">
+          <div class="seg" id="pool-filters">
+            <button class="seg-btn is-on" data-pos="ALL">All</button>
+            <button class="seg-btn" data-pos="DEF">Defs</button>
+            <button class="seg-btn" data-pos="MID">Mids</button>
+            <button class="seg-btn" data-pos="RUC">Rucks</button>
+            <button class="seg-btn" data-pos="FWD">Fwds</button>
+          </div>
+          <button class="chip-toggle" id="pool-remaining-toggle" type="button" role="switch" aria-checked="false">
+            <span class="chip-check" aria-hidden="true"></span>Available only
+          </button>
+          
+          <button class="autofill-btn" id="autofill-btn" type="button" hidden="">⚡ Autofill</button>
+          <div class="pool-search-wrap">
+            <svg class="pool-search-ico" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg>
+            <input class="pool-search" id="pool-search" type="search" placeholder="Search players…" autocomplete="off" spellcheck="false">
+          </div>
+        </div>
+        <div class="player-rows" id="pool-rows"></div>
+      </div>
+
+    </div>
+  </section>
+
+  
+  <section class="phase" id="phase-season">
+
+    <div class="panel">
+      <div class="panel-head">
+        <h2 class="panel-title">Form Line</h2>
+        <span class="form-head-right">
+          <span class="form-streak" id="form-streak" hidden=""></span>
+          <span class="panel-aside mono" id="form-record">0–0</span>
+        </span>
+      </div>
+      <div class="form-strip" id="form-strip"><div class="form-cell" title="Round 1" data-sig=""><b>·</b><i></i></div><div class="form-cell" title="Round 2" data-sig=""><b>·</b><i></i></div><div class="form-cell" title="Round 3" data-sig=""><b>·</b><i></i></div><div class="form-cell" title="Round 4" data-sig=""><b>·</b><i></i></div><div class="form-cell" title="Round 5" data-sig=""><b>·</b><i></i></div><div class="form-cell" title="Round 6" data-sig=""><b>·</b><i></i></div><div class="form-cell" title="Round 7" data-sig=""><b>·</b><i></i></div><div class="form-cell" title="Round 8" data-sig=""><b>·</b><i></i></div><div class="form-cell" title="Round 9" data-sig=""><b>·</b><i></i></div><div class="form-cell" title="Round 10" data-sig=""><b>·</b><i></i></div><div class="form-cell" title="Round 11" data-sig=""><b>·</b><i></i></div><div class="form-cell" title="Round 12" data-sig=""><b>·</b><i></i></div><div class="form-cell" title="Round 13" data-sig=""><b>·</b><i></i></div><div class="form-cell" title="Round 14" data-sig=""><b>·</b><i></i></div><div class="form-cell" title="Round 15" data-sig=""><b>·</b><i></i></div><div class="form-cell" title="Round 16" data-sig=""><b>·</b><i></i></div><div class="form-cell" title="Round 17" data-sig=""><b>·</b><i></i></div><div class="form-cell" title="Round 18" data-sig=""><b>·</b><i></i></div><div class="form-cell" title="Round 19" data-sig=""><b>·</b><i></i></div><div class="form-cell" title="Round 20" data-sig=""><b>·</b><i></i></div><div class="form-cell" title="Round 21" data-sig=""><b>·</b><i></i></div><div class="form-cell" title="Round 22" data-sig=""><b>·</b><i></i></div></div>
+    </div>
+
+    <div class="panel" id="finals-panel" hidden="">
+      <div class="panel-head">
+        <h2 class="panel-title">September</h2>
+        <button class="finals-skip" id="finals-skip" type="button" hidden="">Skip to result <span class="finals-skip-arrow" aria-hidden="true">→</span></button>
+        <span class="panel-aside mono" id="finals-aside">TOP 8 · FINAL EIGHT SYSTEM</span>
+      </div>
+      <div id="finals-bracket"></div>
+    </div>
+
+    <div class="season-grid">
+      <div class="panel season-results">
+        <div class="panel-head">
+          <h2 class="panel-title">Results</h2>
+          <span class="panel-aside mono" id="round-counter">RD 0/22</span>
+        </div>
+        <div class="results-feed" id="results-feed"><p class="feed-empty">Season yet to commence.</p></div>
+      </div>
+
+      <div class="panel season-ladder">
+        <div class="panel-head">
+          <h2 class="panel-title">Ladder</h2>
+          <span class="panel-aside mono">TOP 8 PLAY FINALS</span>
+        </div>
+        <table class="ladder">
+          <thead><tr><th class="num">#</th><th>Club</th><th class="num">RTG</th><th class="num">W</th><th class="num">L</th><th class="num">%</th><th class="num">PTS</th></tr></thead>
+          <tbody id="ladder-body"><tr class="is-clickable"><td class="num">1</td><td class="club">Adelaide</td>
+      <td class="num"><span class="rate-pill r-good" title="Best-22 rating">71</span></td>
+      <td class="num">0</td><td class="num">0</td><td class="num">—</td><td class="num">0</td></tr><tr class="is-user is-clickable"><td class="num">2</td><td class="club">Brisbane</td>
+      <td class="num"><span class="rate-pill r-ok" title="Best-22 rating">64</span></td>
+      <td class="num">0</td><td class="num">0</td><td class="num">—</td><td class="num">0</td></tr><tr class="is-clickable"><td class="num">3</td><td class="club">Carlton</td>
+      <td class="num"><span class="rate-pill r-good" title="Best-22 rating">69</span></td>
+      <td class="num">0</td><td class="num">0</td><td class="num">—</td><td class="num">0</td></tr><tr class="is-clickable"><td class="num">4</td><td class="club">Collingwood</td>
+      <td class="num"><span class="rate-pill r-good" title="Best-22 rating">74</span></td>
+      <td class="num">0</td><td class="num">0</td><td class="num">—</td><td class="num">0</td></tr><tr class="is-clickable"><td class="num">5</td><td class="club">Essendon</td>
+      <td class="num"><span class="rate-pill r-good" title="Best-22 rating">74</span></td>
+      <td class="num">0</td><td class="num">0</td><td class="num">—</td><td class="num">0</td></tr><tr class="is-clickable"><td class="num">6</td><td class="club">Fremantle</td>
+      <td class="num"><span class="rate-pill r-ok" title="Best-22 rating">65</span></td>
+      <td class="num">0</td><td class="num">0</td><td class="num">—</td><td class="num">0</td></tr><tr class="is-clickable"><td class="num">7</td><td class="club">Geelong</td>
+      <td class="num"><span class="rate-pill r-good" title="Best-22 rating">75</span></td>
+      <td class="num">0</td><td class="num">0</td><td class="num">—</td><td class="num">0</td></tr><tr class="finals-line is-clickable"><td class="num">8</td><td class="club">Gold Coast</td>
+      <td class="num"><span class="rate-pill r-ok" title="Best-22 rating">58</span></td>
+      <td class="num">0</td><td class="num">0</td><td class="num">—</td><td class="num">0</td></tr><tr class="is-clickable"><td class="num">9</td><td class="club">GWS</td>
+      <td class="num"><span class="rate-pill r-poor" title="Best-22 rating">32</span></td>
+      <td class="num">0</td><td class="num">0</td><td class="num">—</td><td class="num">0</td></tr><tr class="is-clickable"><td class="num">10</td><td class="club">Hawthorn</td>
+      <td class="num"><span class="rate-pill r-good" title="Best-22 rating">77</span></td>
+      <td class="num">0</td><td class="num">0</td><td class="num">—</td><td class="num">0</td></tr><tr class="is-clickable"><td class="num">11</td><td class="club">Melbourne</td>
+      <td class="num"><span class="rate-pill r-ok" title="Best-22 rating">55</span></td>
+      <td class="num">0</td><td class="num">0</td><td class="num">—</td><td class="num">0</td></tr><tr class="is-clickable"><td class="num">12</td><td class="club">North Melbourne</td>
+      <td class="num"><span class="rate-pill r-good" title="Best-22 rating">74</span></td>
+      <td class="num">0</td><td class="num">0</td><td class="num">—</td><td class="num">0</td></tr><tr class="is-clickable"><td class="num">13</td><td class="club">Port Adelaide</td>
+      <td class="num"><span class="rate-pill r-ok" title="Best-22 rating">60</span></td>
+      <td class="num">0</td><td class="num">0</td><td class="num">—</td><td class="num">0</td></tr><tr class="is-clickable"><td class="num">14</td><td class="club">Richmond</td>
+      <td class="num"><span class="rate-pill r-ok" title="Best-22 rating">66</span></td>
+      <td class="num">0</td><td class="num">0</td><td class="num">—</td><td class="num">0</td></tr><tr class="is-clickable"><td class="num">15</td><td class="club">St Kilda</td>
+      <td class="num"><span class="rate-pill r-good" title="Best-22 rating">71</span></td>
+      <td class="num">0</td><td class="num">0</td><td class="num">—</td><td class="num">0</td></tr><tr class="is-clickable"><td class="num">16</td><td class="club">Sydney</td>
+      <td class="num"><span class="rate-pill r-good" title="Best-22 rating">75</span></td>
+      <td class="num">0</td><td class="num">0</td><td class="num">—</td><td class="num">0</td></tr><tr class="is-clickable"><td class="num">17</td><td class="club">West Coast</td>
+      <td class="num"><span class="rate-pill r-good" title="Best-22 rating">70</span></td>
+      <td class="num">0</td><td class="num">0</td><td class="num">—</td><td class="num">0</td></tr><tr class="is-clickable"><td class="num">18</td><td class="club">Western Bulldogs</td>
+      <td class="num"><span class="rate-pill r-good" title="Best-22 rating">68</span></td>
+      <td class="num">0</td><td class="num">0</td><td class="num">—</td><td class="num">0</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+
+  </section>
+
+  
+  <section class="phase" id="phase-review" hidden="">
+
+    <div class="verdict" id="verdict">
+      <span class="verdict-flag" id="verdict-flag" hidden="">Undefeated home &amp; away season</span>
+      <span class="verdict-banner" id="verdict-banner">—</span>
+      <div class="verdict-tiles">
+        <div class="verdict-tile">
+          <span class="verdict-tile-label">FINISHED</span>
+          <span class="verdict-tile-num" id="verdict-finished">—</span>
+        </div>
+        <div class="verdict-tile">
+          <span class="verdict-tile-label">PROJECTED</span>
+          <span class="verdict-tile-num verdict-tile-num--dim" id="verdict-projected">—</span>
+        </div>
+      </div>
+      <p class="verdict-copy" id="verdict-copy"></p>
+    </div>
+
+    <div class="review-shape" id="review-shape" hidden=""></div>
+
+    <div class="stat-tiles" id="stat-tiles"></div>
+
+    <div class="review-cols">
+      <div class="panel">
+        <div class="panel-head"><h2 class="panel-title">Season Awards</h2></div>
+        <div class="awards" id="awards"></div>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><h2 class="panel-title">Departures</h2>
+          <span class="panel-aside mono">OFF THE LIST FOR <span id="dep-year"></span></span></div>
+        <div class="departures" id="departures"></div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head"><h2 class="panel-title">Final Ladder</h2></div>
+      <table class="ladder">
+        <thead><tr><th class="num">#</th><th>Club</th><th class="num">RTG</th><th class="num">W</th><th class="num">L</th><th class="num">%</th><th class="num">PTS</th></tr></thead>
+        <tbody id="final-ladder-body"></tbody>
+      </table>
+    </div>
+
+  </section>
+
+  
+  <section class="phase" id="phase-record" hidden="">
+    <div class="panel">
+      <div class="panel-head">
+        <h2 class="panel-title">Season Record</h2>
+        <span class="panel-aside mono" id="record-club">—</span>
+      </div>
+      <div class="record-summary" id="record-summary"></div>
+      <div class="record-scroll">
+        <table class="ladder record-table">
+          <thead><tr><th>Season</th><th class="num">Rating</th><th class="num">Ladder</th><th class="num">%</th><th>Finals</th><th>Premier</th><th>Brownlow</th><th>Coleman</th><th>Best &amp; Fairest</th><th>Leading GK</th><th class="num rec-pts-h">Run Pts</th></tr></thead>
+          <tbody id="record-body"></tbody>
+        </table>
+      </div>
+      
+      <div class="record-shape" id="record-shape" hidden=""></div>
+      <div class="record-newrun-row" id="record-newrun-row" hidden="">
+        <p class="record-newrun-note">This dynasty is complete. The ledger stays in your trophy cabinet.</p>
+        <button class="cta" id="record-newrun" type="button">Start a New Run</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+<div class="actionbar">
+  <div class="actionbar-inner">
+    <span class="actionbar-status" id="action-status">22 rounds · projected <b>14th</b></span>
+    <div class="cta-group">
+      <button class="cta is-ghost" id="cta-alt">Set Line-up</button>
+      <button class="cta" id="cta">Play Season</button>
+    </div>
+  </div>
+</div>
+
+
+<script src="./Footy Redraft — Rebuild the league, Season by Season_files/data.real.js.download"></script>
+
+<script src="./Footy Redraft — Rebuild the league, Season by Season_files/data.overrides.js.download"></script>
+<script src="./Footy Redraft — Rebuild the league, Season by Season_files/data.js.download"></script>
+<script src="./Footy Redraft — Rebuild the league, Season by Season_files/app.js.download"></script>
+<script src="./Footy Redraft — Rebuild the league, Season by Season_files/trade.js.download"></script>
+
+
+</body></html>
